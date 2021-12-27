@@ -3,10 +3,15 @@ const { graphqlHTTP } = require('express-graphql')
 const schema = require('./schema/schema')
 
 const app = express()
-
+var root = {
+  hello: ()=> {
+    return "Hello World"
+  }
+}
 app.use('/graphql', graphqlHTTP({
   schema: schema,
-  graphiql: true
+  graphiql: true,
+  
 }),)
 
 app.listen(4000, ()=> {
