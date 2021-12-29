@@ -53,7 +53,7 @@
 // }
 
 import React, { Component } from 'react';
-import { graphql, compose } from "react-apollo"; // to bind GraphQL queries to a component
+import { graphql, compose } from "@apollo/client"; // to bind GraphQL queries to a component
 import { getAuthorsQuery, addBookMutation, getBooksQuery } from "../queries/queries";
 
 class AddBook extends Component {

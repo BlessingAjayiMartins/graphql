@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { graphql } from "react-apollo"; // to bind GraphQL queries to a component
+import { graphql } from "@apollo/client"; // to bind GraphQL queries to a component
 import { getBookQuery } from "../queries/queries";
 
 class BookDetails extends Component {

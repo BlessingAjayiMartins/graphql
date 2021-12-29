@@ -1,4 +1,4 @@
-import { gql } from "apollo-boost"; // to make GraphQL queries
+import { gql } from "@apollo/client"; // to make GraphQL queries
 
 const getBooksQuery = gql`
   query {
